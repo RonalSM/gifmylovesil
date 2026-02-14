@@ -11,7 +11,7 @@
       body{height:100vh}
       .book-cover{
         width: min(520px, var(--bookW));
-        height: min(1036px, calc(var(--bookH) * 1.44)); /* otro 20% más alto */
+        height: min(1036px, calc(var(--bookH) * 1)); /* otro 20% más alto */
         position:relative;
         perspective:1200px;
       }
@@ -42,7 +42,7 @@
 
       /* Hoja interna */
       .inner{
-        position:absolute;left:14%;right:14%;top:14%;bottom:14%;background:linear-gradient(180deg,#fff,#fbfaf8);box-shadow:inset 0 0 0 1px #e2dcd6,0 12px 30px rgba(0,0,0,.2);overflow:hidden;padding:18px;border-radius:6px;display:flex;flex-direction:column;opacity:1;transform:none;transition:opacity .28s,transform .28s;pointer-events:auto;z-index:4;
+        position:absolute;left:5%;right:5%;top:20%;bottom:20%;background:linear-gradient(180deg,#fff,#fbfaf8);box-shadow:inset 0 0 0 1px #e2dcd6,0 12px 30px rgba(0,0,0,.2);overflow:hidden;padding:18px;border-radius:6px;display:flex;flex-direction:column;opacity:1;transform:none;transition:opacity .28s,transform .28s;pointer-events:auto;z-index:4;
       }
       .page{flex:1;overflow:hidden;cursor:pointer;padding:8px}
       .page p{white-space:pre-wrap;margin:0;color:#111;line-height:1.45;font-size:clamp(14px, 3.5vw, 18px)}
